@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Array Methods</title>
+  </head>
+  <body>
+    <h1>Array Methods Prompt</h1>
+    <p>
+      Please enter a set of numbers separated by commas and make a selection.
+    </p>
+    <div class="container">
+      <!--Input tag - user enters string -->
+      <div class="user-input">
+        <label for="text">Enter Numbers:</label>
+        <input id="user_input" type="text" />
+      </div>
+
+      <!--Radio button 1 + label -->
+      <div class="functions">
+        <label for="function">Even Numbers</label>
+        <input id="even_nums_selector" name="group-1" type="radio" />
+      </div>
+
+      <!--Radio button 2 + label -->
+      <div class="functions">
+        <label for="function">Total of Numbers</label>
+        <input id="total_nums_selector" name="group-1" type="radio" />
+      </div>
+
+      <!--Button for user to click -->
+      <button id="button">Result</button>
+
+      <!--Output / result -->
+      <p id="result"></p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
