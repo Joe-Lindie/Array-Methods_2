@@ -1,3 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+
+  /* Primary Colors */
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -6,10 +27,25 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--Very-dark-blue-main-BG);
+}
+
+h1 {
+  color: var(--White);
+  padding-bottom: 1rem;
+}
+
+p, label {
+  color: var(--Soft-blue);
+}
+
+p {
+  padding-bottom: 2rem;
 }
 
 .container {
-  border: 0.5px solid gray;
+  border: 0.5px solid var(--White);
+  background-color: var(--Very-dark-blue-card-BG);
   padding: 20px;
   border-radius: 10px;
 }
@@ -20,6 +56,9 @@ body {
 
 .user-input input {
   margin-left: 10px;
+  border-style: none;
+  background-color: var(--Very-dark-blue-main-BG); 
+  color: var(--Cyan);
 }
 
 .functions {
@@ -30,4 +69,22 @@ body {
 button,
 .user-input input {
   cursor: pointer;
+  border-radius: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  padding: 0.2rem  0.5rem 0.2rem 0.5rem;
+  margin-bottom: 0.5rem;
+  border-style: none;
+  color: var(--Soft-blue);
+  background-color: var(--Very-dark-blue-main-BG);
+}
+
+button:hover {
+  color: var(--Cyan);
+  font-weight: bold;
 }

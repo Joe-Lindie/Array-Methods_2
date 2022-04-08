@@ -33,7 +33,7 @@ button.addEventListener("click", function () {
     ? evenNumsFn(arrOfNums)
     : totalNumsSelector.checked
     ? totalNumsFn(arrOfNums)
-    : (result.textContent = `Please make a selection! Even or Total?`);
+    : (result.textContent = `Please make a selection! Filter or reduce?`);
 });
 
 /*
