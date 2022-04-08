@@ -40,7 +40,8 @@ p, label {
 }
 
 p {
-  padding-bottom: 2rem;
+  padding: 2rem;
+  text-align: center;
 }
 
 .container {
@@ -56,6 +57,7 @@ p {
 
 .user-input input {
   margin-left: 10px;
+  margin-bottom: 1rem;
   border-style: none;
   background-color: var(--Very-dark-blue-main-BG); 
   color: var(--Cyan);
